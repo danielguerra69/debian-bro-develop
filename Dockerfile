@@ -86,6 +86,5 @@ openssh-server --no-install-recommends \
 && ./configure --no-examples --no-benchmarks --no-opencl \
 && make \
 && make install \
-&& apt-get remove -y $buildDeps \
 && apt-get clean \
 && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
