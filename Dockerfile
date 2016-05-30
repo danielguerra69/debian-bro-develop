@@ -38,9 +38,8 @@ libjemalloc1-dbg ' \
 && apt-get -qq upgrade \
 && apt-get install -yq $buildDeps \
 tcpdump \
-php5-cli \
-php5-fpm \
-nginx \
+apache2 \
+libapache2-mod-php5 \
 libjemalloc1 \
 amqp-tools \
 locales \
