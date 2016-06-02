@@ -1,6 +1,5 @@
 FROM debian:jessie
 
-# based on blacktop bro
 MAINTAINER danielguerra, https://github.com/danielguerra
 
 #set the path
@@ -37,6 +36,7 @@ libjemalloc1-dbg ' \
 && apt-get -qq update \
 && apt-get -qq upgrade \
 && apt-get install -yq $buildDeps \
+supervisor \
 tcpdump \
 apache2 \
 libapache2-mod-php5 \
