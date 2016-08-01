@@ -66,9 +66,9 @@ openssh-server --no-install-recommends \
 && cd /tmp/ipsumdump \
 && /bin/bash ./configure --enable-all-elements ;make; make install \
 && cd /tmp \
-&& wget http://downloads.sourceforge.net/project/swig/swig/swig-3.0.7/swig-3.0.7.tar.gz \
-&& tar xvfz swig-3.0.7.tar.gz \
-&& cd /tmp/swig-3.0.7 \
+&& wget http://downloads.sourceforge.net/project/swig/swig/swig-3.0.7/swig-3.0.10.tar.gz \
+&& tar xvfz swig-3.0.10.tar.gz \
+&& cd /tmp/swig-3.0.10 \
 && ./configure \
 && make \
 && make install \
